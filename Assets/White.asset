@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 577c726b5dc37ad4a9f11701bd875e8c, type: 3}
   m_Name: White
   m_EditorClassIdentifier: 
-  cube_color: {r: 0, g: 0, b: 0, a: 0}
-  click_amount: 0
+  cube_color: {r: 1, g: 1, b: 1, a: 0}
+  click_amount: 7

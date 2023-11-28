@@ -321,6 +321,7 @@ GameObject:
   - component: {fileID: 1605196670}
   - component: {fileID: 1605196669}
   - component: {fileID: 1605196668}
+  - component: {fileID: 1605196672}
   m_Layer: 0
   m_Name: allahin_cezasi_arka_plan
   m_TagString: Untagged
@@ -414,6 +415,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1605196672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605196667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4140baefec432542b96a1a3ce32cada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawn_position: {fileID: 0}
+  cube_scriptable_objects:
+  - {fileID: 11400000, guid: 1331cd89f305a0d48933d221845095dd, type: 2}
+  - {fileID: 11400000, guid: 0d4e71feae540ea4dad328ded3655aee, type: 2}
+  - {fileID: 11400000, guid: ef507819f430a394683190f9bab4ee4c, type: 2}
+  - {fileID: 11400000, guid: 0331b662b5807d746bd4678b1c9a4929, type: 2}
+  - {fileID: 11400000, guid: 155c6da79acc7eb4797136c5315ae06b, type: 2}
+  - {fileID: 11400000, guid: 7f1ace4d6abebf24f86c96af671bcee0, type: 2}
+  - {fileID: 11400000, guid: 4571288aaca6cd8449efdc05fa80cea8, type: 2}
+  - {fileID: 11400000, guid: 147e7a296811b914b8548fd00176db90, type: 2}
+  cube_object: {fileID: 0}
 --- !u!1 &1707725306
 GameObject:
   m_ObjectHideFlags: 0

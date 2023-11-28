@@ -7,23 +7,25 @@ using DG.Tweening;
 public class Cube : MonoBehaviour
 {
     int _clickAmountToDestroy;
-    
     public Action destroy_event;
+    public CubeController cube_object_controller;
 
-    private void OnEnable()
+
+    private void awake()
     {
-        //destroy_event +=  
+        gameObject.TryGetComponent(out MeshRenderer cube_render);
+        cube_render.material.color = cube_object_controller.CubeScriptableObject.cube_color;
     }
 
-    private void OnDestroy()
-    {
-        
-    }
+
+    
+
+
 
     public void Click() 
    {
-        _clickAmountToDestroy--;
-        if(_clickAmountToDestroy < 0) 
+        cube_object_controller.CubeScriptableObject.click_amount--;
+        if(cube_object_controller.CubeScriptableObject.click_amount < 0) 
         {
             Destroy();   
         }
@@ -31,8 +33,14 @@ public class Cube : MonoBehaviour
 
    void Destroy()
    {
-
-   
+        gameObject.transform.DOScale(0, 1).OnComplete(() => 
+        {
+            destroy_event?.Invoke();
+            Destroy(gameObject);
+        });
+        
+       
+    
    }
 
 }
