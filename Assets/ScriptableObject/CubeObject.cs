@@ -5,15 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Cube Settings")]
 public class CubeObject : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public Color cube_color;
+    public int click_amount;
+
 }
+
