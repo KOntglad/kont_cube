@@ -24,7 +24,7 @@ public class CubeSpawner : MonoBehaviour
         Instantiate(cube_object,spawn_position.position,spawn_position.rotation);
         cube_object.TryGetComponent(out Cube _cube_object_new);
 
-        _cube_object_new.cube_object_controller.CubeScriptableObject = cube_scriptable_objects[_cube_object_number]; 
+        _cube_object_new.cube_object = cube_scriptable_objects[_cube_object_number]; 
         _cube_object_new.destroy_event += SpawnCube;
     
     }
