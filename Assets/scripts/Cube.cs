@@ -17,7 +17,7 @@ public class Cube : MonoBehaviour
     {
         cube_destroy_click_amount = cube_object.click_amount;
         gameObject.TryGetComponent(out MeshRenderer cube_material);
-        cube_material.material.SetColor(1,cube_object.cube_color);
+        cube_material.materials[0].color = cube_object.cube_color;
     }
     
 
