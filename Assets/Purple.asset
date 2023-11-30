@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Purple
   m_EditorClassIdentifier: 
   cube_color: {r: 0.4, g: 0, b: 0.6, a: 0}
-  click_amount: 8
+  click_amount: 7

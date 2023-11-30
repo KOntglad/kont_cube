@@ -8,7 +8,10 @@ public class CubeSpawner : MonoBehaviour
     public CubeObject[]  cube_scriptable_objects; 
     public GameObject cube_object;
 
-
+    private void Start()
+    {
+        SpawnCube();
+    }
 
 
     void SpawnCube() 
@@ -25,7 +28,7 @@ public class CubeSpawner : MonoBehaviour
         cube_object.TryGetComponent(out Cube _cube_object_new);
 
         _cube_object_new.cube_object = cube_scriptable_objects[_cube_object_number]; 
-        _cube_object_new.destroy_event += SpawnCube;
-    
+         Cube.destroy_event = SpawnCube;
+        _cube_object_new.gameObject.SetActive(true);
     }
 }
